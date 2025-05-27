@@ -1,0 +1,39 @@
+/* Selectors Playground */
+
+/* Universal selector: Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Element selector: Style all h2 elements */
+h2 {
+  font-size: 28px;
+  color: #1d3557;
+  margin-bottom: 15px;
+}
+
+/* ID selector: Style the main header/banner */
+#mainHeader {
+  background-color: #457b9d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Class selector: Style event cards */
+.eventCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f1faee;
+  margin: 20px 0;
+}
+
+/* Grouping selector: Style h3 and p elements together */
+h3, p {
+  color: #343a40;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}

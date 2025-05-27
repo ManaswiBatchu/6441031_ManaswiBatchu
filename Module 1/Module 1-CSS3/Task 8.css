@@ -1,0 +1,28 @@
+/* Box Model & Layout Control */
+
+/* Event card spacing and border */
+.eventCard {
+  border: 2px solid #2a9d8f;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  background-color: #f1f5f9;
+}
+
+/* Highlight selected form fields */
+input:focus, select:focus, textarea:focus {
+  outline: 3px solid #ff6f61;
+  outline-offset: 2px;
+}
+
+/* Hidden vs. none example */
+
+/* Makes element invisible but keeps its space */
+.invisible {
+  visibility: hidden;
+}
+
+/* Removes element from the layout completely */
+.no-display {
+  display: none;
+}

@@ -1,0 +1,45 @@
+/* Link and List Styling */
+
+/* Default link style */
+a:link {
+  color: #1d3557;
+  text-decoration: none;
+}
+
+/* Visited link style */
+a:visited {
+  color: #6c757d;
+}
+
+/* Hover link style */
+a:hover {
+  color: #e63946;
+  text-decoration: underline;
+}
+
+/* Active link style */
+a:active {
+  color: #f1faee;
+  background-color: #457b9d;
+}
+
+/* Unordered list styling */
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+  margin: 20px;
+  padding: 10px;
+}
+
+/* Navigation menu (no bullets) */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List item spacing */
+li {
+  margin-bottom: 10px;
+  padding-left: 5px;
+}

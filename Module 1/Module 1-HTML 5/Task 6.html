@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback</title>
+  <style>
+    #eventImg { width: 150px; cursor: pointer; transition: 0.3s; }
+    .enlarge { transform: scale(2); }
+  </style>
+</head>
+<body>
+
+<form>
+  Phone: <input type="text" id="phone" onblur="validatePhone()" placeholder="10-digit" required><br>
+  Event: 
+  <select id="eventType" onchange="showFee()">
+    <option value="">--Select--</option>
+    <option value="50">Music</option>
+    <option value="30">Tech</option>
+    <option value="40">Art</option>
+  </select>
+  <div id="fee"></div>
+
+  Feedback:<br>
+  <textarea id="feedback" onkeyup="countChars()" placeholder="Type here..."></textarea>
+  <div id="count">0 chars</div>
+
+  <button type="button" onclick="submitMsg()">Submit</button>
+  <div id="msg"></div>
+</form>
+
+<p>Double-click to enlarge:</p>
+<img src="event.jpg" id="eventImg" ondblclick="enlargeImg()">
+
+<script>
+  function validatePhone() {
+    let val = document.getElementById("phone").value;
+    if (!/^\d{10}$/.test(val)) alert("Invalid phone!");
+  }
+
+  function showFee() {
+    let fee = document.getElementById("eventType").value;
+    document.getElementById("fee").textContent = "Fee: $" + fee;
+  }
+
+  function countChars() {
+    let len = document.getElementById("feedback").value.length;
+    document.getElementById("count").textContent = len + " chars";
+  }
+
+  function submitMsg() {
+    document.getElementById("msg").textContent = "Feedback submitted!";
+  }
+
+  function enlargeImg() {
+    document.getElementById("eventImg").classList.toggle("enlarge");
+  }
+</script>
+
+</body>
+</html>
